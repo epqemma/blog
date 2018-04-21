@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+<title>Write!Now</title>
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/writenow.png' %}"" alt="write.now!" width="15%"></a>
+   <ul>
+	<li><a href="#">Files</a></li>
+	<li><a href="#">Settings</a></li>
+	<li><a href="#">Contact</a></li>
+   </ul>
+</header>
+{% block content %}
+<article>
+
+</article>
+{% endblock %}
+</div>
+
+</body>
+</html>
